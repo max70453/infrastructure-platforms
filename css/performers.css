@@ -1,0 +1,164 @@
+.search-section {
+    padding: 80px 0 40px;
+    background: #f5f5f5;
+}
+
+.search-section .section-title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.search-section .section-title h3 {
+    color: #111111;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.search-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-form input[type="text"] {
+    width: 100%;
+    height: 46px;
+    padding: 5px 20px;
+    font-size: 16px;
+    color: #111111;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.search-form .form-control {
+    height: 46px;
+    font-size: 14px;
+}
+
+.performers-section {
+    padding: 80px 0;
+}
+
+.performer-card {
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.performer-img {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.performer-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.performer-img .rating {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.performer-img .rating i {
+    color: #ffd700;
+    margin-right: 2px;
+}
+
+.performer-info {
+    padding: 25px;
+}
+
+.performer-info h5 {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.performer-info p {
+    margin-bottom: 15px;
+    color: #666666;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.services-list li {
+    color: #666666;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.services-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+}
+
+.experience {
+    color: #666666;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.pagination-wrapper {
+    margin-top: 50px;
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.pagination li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #111111;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.pagination li a.active {
+    background: #007bff;
+    color: #ffffff;
+}
+
+.performers-section .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.performer-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.performer-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.services-list {
+    flex: 1;
+    margin-bottom: 20px;
+}
+.site-btn {
+    margin-top: auto;
+}

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Информация об исполнителе">
+    <meta name="keywords" content="исполнитель, портфолио, услуги">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Подробнее об исполнителе</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- Custom styles -->
+    <style>
+        .performer-info {
+            padding: 80px 0;
+            background: #f5f5f5;
+        }
+        .portfolio-item {
+            margin-bottom: 30px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .portfolio-item .content {
+            padding: 20px;
+            background: #fff;
+        }
+        .review-item {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+        }
+        .rating {
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+        .certificate-item {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .service-price-item {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+        }
+        .contact-form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas__menu__overlay"></div>
+    <div class="offcanvas__menu__wrapper">
+        <div class="canvas__close">
+            <span class="fa fa-times-circle-o"></span>
+        </div>
+        <div class="offcanvas__logo">
+            <a href="#"><img src="img/logo-1.png" alt=""></a>
+        </div>
+        <nav class="offcanvas__menu mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Главная</a></li>
+                <li><a href="./about.html">О нас</a></li>
+                <li><a href="./blog.html">Сервисы</a></li>
+                <li><a href="./contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__auth"></div>
+        <div class="offcanvas__info">
+            <ul>
+                <li><span class="icon_phone"></span>  +7949-099-99-90</li>
+                <li><span class="fa fa-envelope"></span> Amik@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header-section header-normal">
+        <div class="header__info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__info-left">
+                            <ul>
+                                <li><span class="icon_phone"></span> +7949-099-99-90</li>
+                                <li><span class="fa fa-envelope"></span> Amik@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__info-right">
+                            <ul>
+                                <!-- <li><a href="#"><span class="icon_chat_alt"></span> Живой чат</a></li> -->
+                                <!-- <li><a href="#"><span class="fa fa-user"></span> Вход / Регистрация</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="./index.html" class="d-flex align-items-center">
+                            <img src="img/logo-1.png" style="max-width: 33%;" alt="">
+                            <div style="color: white; font-size: 25px;padding-top: 20px;">Амик</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="./index.html">Главная</a></li>
+                            <li><a href="./about.html">О нас</a></li>
+                            <li><a href="./services.html">Услуги</a></li>
+                            <li class="active"><a href="performers.html">Исполнители</a></li>
+                            <li><a href="./contact.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Performer Info Section Begin -->
+    <section class="performer-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3>Информация об исполнителе</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="about-text">
+                        <h4>О компании</h4>
+                        <p>Мы - команда профессионалов с более чем 10-летним опытом работы в сфере разработки и внедрения IT-решений. Наша компания специализируется на создании высококачественных веб-приложений, мобильных приложений и корпоративных систем.</p>
+                    </div>
+
+                    <!-- Portfolio Section -->
+                    <div class="portfolio-section mt-5">
+                        <h4 class="mb-3">Портфолио</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <img src="img/work-1.png" alt="Проект 1">
+                                    <div class="content">
+                                        <h5>Корпоративный портал</h5>
+                                        <p>Разработка и внедрение корпоративного портала для крупной компании</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <img src="img/work-2.jpg" alt="Проект 2">
+                                    <div class="content">
+                                        <h5>Мобильное приложение</h5>
+                                        <p>Создание мобильного приложения для службы доставки</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reviews Section -->
+                    <div class="reviews-section mt-5">
+                        <h4>Отзывы клиентов</h4>
+                        <div class="review-item">
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>"Отличная команда профессионалов! Проект был выполнен в срок и с высоким качеством."</p>
+                            <h6>- Иван Петров, ООО "Технологии"</h6>
+                        </div>
+                        <div class="review-item">
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <p>"Профессиональный подход к работе и отличное качество исполнения."</p>
+                            <h6>- Мария Сидорова, ИП</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <!-- Rating Section -->
+                    <div class="rating-section">
+                        <div class="service-price-item">
+                            <h4>Рейтинг</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <p>4.8 из 5 (на основе 150 отзывов)</p>
+                        </div>
+                    </div>
+
+                    <!-- Certificates Section -->
+                    <div class="certificates-section mt-4">
+                        <div class="certificate-item">
+                            <h4>Сертификаты</h4>
+                            <img src="img/cert.jpg" alt="Сертификат 1" class="mb-3">
+                            <p>Сертифицированный партнер Microsoft</p>
+                        </div>
+                    </div>
+
+                    <!-- Services Price List -->
+                    <div class="services-price-section mt-4">
+                        <div class="service-price-item">
+                            <h4>Услуги и цены</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <h6>Разработка веб-сайта</h6>
+                                    <p style="font-weight: 700;">от 50,000 ₽</p>
+                                </li>
+                                <li class="mb-3">
+                                    <h6>Мобильное приложение</h6>
+                                    <p style="font-weight: 700;">от 100,000 ₽</p>
+                                </li>
+                                <li class="mb-3">
+                                    <h6>SEO-оптимизация</h6>
+                                    <p style="font-weight: 700;">от 30,000 ₽/мес</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form mt-4">
+                        <h4>Связаться с исполнителем</h4>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="4" placeholder="Ваше сообщение"></textarea>
+                            </div>
+                            <button type="submit" class="site-btn">Отправить сообщение</button>
+                        </form>
+                    </div>
+
+                    <!-- Order Service Button -->
+                    <div class="text-center mt-4">
+                        <a href="#" class="primary-btn">Заказать услугу</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Performer Info Section End -->
+
+   <!-- Footer Section Begin -->
+   <footer class="footer-section">
+    <div class="footer__top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer__top-call">
+                        <h5>Техническая поддержка</h5>
+                        <h2>+7 (495) 123-45-67</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__text set-bg" data-setbg="img/footer-bg.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer__text-about">
+                        <div class="footer__logo" style="display: flex; align-items: center;">
+                            <img src="img/logo-1.png" style="max-width: 33%;" alt="">
+                            <div style="color: white; font-size: 25px;padding-top: 20px;">Амик</div>
+                        </div>
+                        <p>Полное решение для проектирования и управления сетевой инфраструктурой. Профессиональные услуги по интеграции, настройке и обслуживанию сетевого оборудования.</p>
+                        <div class="footer__social">
+                            <a href="#"><i class="fa fa-telegram"></i></a>
+                            <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                            <a href="#"><i class="fa fa-vk"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer__text-widget">
+                        <h5>Компания</h5>
+                        <ul>
+                            <li><a href="./about.html">О нас</a></li>
+                            <li><a href="./blog.html">Блог</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Партнёрам</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__text-widget">
+                        <h5>Решения</h5>
+                        <ul>
+                            <li><a href="#">Корпоративные сети</a></li>
+                            <li><a href="#">ЦОДы и виртуализация</a></li>
+                            <li><a href="#">Безопасность сетей</a></li>
+                            <li><a href="#">SD-WAN решения</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer__text-widget">
+                        <h5>Контакты</h5>
+                        <ul class="footer__widget-info">
+                            <li><span class="fa fa-map-marker"></span> Будённовских партизан, 47б; Кирова, 17</li>
+                            <li><span class="fa fa-mobile"></span> +7 (495) 123-45-67</li>
+                            <li><span class="fa fa-headphones"></span> support@infraplatforms.ru</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__text-copyright">
+                <p style="color: white;">© InfraPlatforms 2025. Все права защищены.<br>Лицензия №123456 от 01.01.2025</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
