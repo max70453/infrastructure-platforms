@@ -1,12 +1,3 @@
-/*  ---------------------------------------------------
-  Template Name: Deerhost
-  Description:  Deerhost Hosting HTML Template
-  Author: Colorlib
-  Author URI: https://colorlib.com
-  Version: 1.0
-  Created: Colorlib
----------------------------------------------------------  */
-
 'use strict';
 
 (function ($) {
@@ -97,17 +88,17 @@
     /*------------------
         Radio btn
     --------------------*/
-    $(".pricing__swipe-btn label").on('click', function (e) {
+    $(".pricing__swipe-btn input[type='radio']").on('change', function (e) {
         $(".pricing__swipe-btn label").removeClass("active");
-        $(this).addClass("active");
-
-        if(e.target.htmlFor == 'month') {
-            $(".yearly__plans").removeClass('active');
-            $(".monthly__plans").addClass('active');
-        } else if (e.target.htmlFor == 'yearly') {
-            $(".monthly__plans").removeClass('active');
-            $(".yearly__plans").addClass('active');
-        }     
+        $(this).next("label").addClass("active");
+    
+        if(e.target.id == 'project') {
+            $(".yearly__plans").removeClass('active').hide();
+            $(".monthly__plans").addClass('active').show();
+        } else if (e.target.id == 'subscription') {
+            $(".monthly__plans").removeClass('active').hide();
+            $(".yearly__plans").addClass('active').show();
+        }
     });
     
     /*------------------
