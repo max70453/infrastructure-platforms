@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -21,18 +21,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <style>
-        .services__item {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-        .pricing__item {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-    </style>
+    <link rel="stylesheet" href="css/modal.css" type="text/css">
 </head>
 
 <body>
@@ -135,7 +124,7 @@
                             <div class="hero__text">
                                 <h5>Команда опытных специалистов</h5>
                                 <h2>Легкий заказ услуг построения сетевой <br />инфраструктуры для вашего бизнеса</h2>
-                                <a href="#" class="primary-btn">Узнать больше</a>
+                                <a href="#" class="primary-btn request-btn">Оставить заявку</a>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -153,7 +142,7 @@
                             <div class="hero__text">
                                 <h5>Доверьте построение сети профессионалам</h5>
                                 <h2>Квалифицированные специалисты, <br />проверенные исполнители и гарантия качества</h2>
-                                <a href="#" class="primary-btn">Узнать больше</a>
+                                <a href="#" class="primary-btn request-btn">Оставить заявку</a>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -165,6 +154,7 @@
                 </div>
             </div>
         </div>
+
     </section>
     <!-- Hero Section End -->
 
@@ -207,6 +197,7 @@
                 </div>
             </div>
         </div>
+
     </section>
     <!-- Services Section End -->
 
@@ -363,6 +354,7 @@
                 </div>
             </div>
         </div>
+
     </section>
     <!-- Pricing Section End -->
 
@@ -400,11 +392,53 @@
                 </div>
             </div>
         </div>
+    <div id="requestModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Оставьте заявку</h2>
+        <form id="requestForm" onsubmit="event.preventDefault(); submitForm();">
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit" class="primary-btn">Отправить</button>
+        </form>
+    </div>
+    </div>
     </section>
     <!-- Achievement Section End -->
 
+    <!-- Modal Begin -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h4>Заказать тарифный план</h4>
+            </div>
+            <div class="modal-body">
+                <form id="orderForm">
+                    <input type="hidden" id="planName" name="planName">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="phone" placeholder="Телефон" required>
+                    <textarea name="message" placeholder="Дополнительная информация" rows="4"></textarea>
+                    <button type="submit">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal End -->
+
     <!-- Features Section Begin -->
-    <section class="features-section spad">
+    <section class="features-section spad" style="background: #eeeffb;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -443,6 +477,27 @@
                 </div>
             </div>
         </div>
+    <div id="requestModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Оставьте заявку</h2>
+        <form id="requestForm" onsubmit="event.preventDefault(); submitForm();">
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit" class="primary-btn">Отправить</button>
+        </form>
+    </div>
+    </div>
     </section>
     <!-- Features Section End -->
 
@@ -487,11 +542,12 @@
                 </div>
             </div>
         </div>
+
     </section>
     <!-- Work Process Section End -->
 
     <!-- FAQ Section Begin -->
-    <section class="faq-section spad">
+    <section class="faq-section spad" style="background: #eeeffb;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -523,22 +579,24 @@
                 </div>
             </div>
         </div>
+
     </section>
     <!-- FAQ Section End -->
 
     <!-- CTA Section Begin -->
-    <section class="cta-section mb-5">
+    <section class="cta-section mb-5 mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 text-center">
                     <div class="cta__item set-bg" data-setbg="img/cta-bg.jpg">
                         <h2>Готовы начать работу с нами?</h2>
                         <p>Оставьте заявку прямо сейчас и получите бесплатную консультацию по вашему проекту</p>
-                        <a href="#" class="primary-btn">Оставить заявку</a>
+                        <a href="#" class="primary-btn" onclick="event.preventDefault(); openModal();">Оставить заявку</a>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
     <!-- CTA Section End -->
 
@@ -620,6 +678,46 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/pricing.js"></script>
+
+<div id="requestModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Оставить заявку</h2>
+    <form id="requestForm">
+      <input type="text" placeholder="Ваше имя" required>
+      <input type="tel" placeholder="Телефон" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Сообщение" required></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
+<!-- JavaScript код перенесен в файл home.js -->
+
+<!-- Модальное окно для заявок -->
+<div id="requestModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Оставьте заявку</h2>
+        <form id="requestForm" onsubmit="event.preventDefault(); submitForm();">
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit" class="primary-btn">Отправить</button>
+        </form>
+    </div>
+</div>
 </body>
 
 </html>
